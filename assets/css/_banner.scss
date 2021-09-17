@@ -1,0 +1,122 @@
+$main-blue: #25aedb;
+$black: #000000;
+$pc-height: calc(100vh - 44px);
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 44px);
+    background-color: $main-blue;
+
+    .banner-deco-item {
+        position: absolute;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        &.deco1 {
+            bottom: 20%;
+            left: 15%;
+            transform: translateY(-50%);
+            width: 5%;
+            height: auto;
+        }
+
+        &.deco2 {
+            right: 0;
+            top: 0;
+            width: 25vw;
+            height: $pc-height;
+            background-image: url('../image/banner/banner-deco2.png');
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        &.deco3 {
+            top: 50%;
+            right: 15%;
+            transform: translate(-50%, -50%);
+            width: 10%;
+            height: auto;
+        }
+
+        &.deco4 {
+            bottom: 3%;
+            left: 50%;
+            transform: translateX(-50%);
+
+            img {
+                max-width: 55px;
+                display: block;
+                margin: auto;
+            }
+
+            p {
+                color: #ffffff;
+                font-family: 'ICIELINTERNACIONAL';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                margin: 5px 0;
+            }
+        }
+    }
+
+    .banner-content {
+        position: relative;
+        max-width: 1440px;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+
+        .banner-logo {
+            margin-bottom: 30px;
+            max-width: 100%;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .banner-title {
+            margin-bottom: 30px;
+            max-width: 60%;
+            padding-left: 5%;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .banner-des {
+            padding-left: 20%;
+
+            h5 {
+                font-family: 'ICIELINTERNACIONAL';
+                font-style: normal;
+                font-weight: bold;
+                color: $black;
+                font-size: 26px;
+                line-height: 1;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-family: 'ICIELINTERNACIONAL';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 1.3;
+                color: $black;
+                max-width: 45%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

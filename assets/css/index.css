@@ -1,0 +1,984 @@
+@font-face {
+  font-family: 'ICIELINTERNACIONAL';
+  src: url("./fonts/ICIELINTERNACIONAL-BOLD.OTF");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'ICIELINTERNACIONAL';
+  src: url("./fonts/ICIELINTERNACIONAL-REGULAR.OTF");
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.vct-master-wrapper {
+  font-size: 17px;
+  line-height: 1.3;
+  width: 100%;
+  overflow: hidden;
+  background-color: #ffffff;
+  padding-top: 44px;
+}
+
+.v-mb {
+  display: none;
+}
+
+.v-mb img {
+  width: 100%;
+  height: auto;
+}
+
+.v-pc {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .v-mb {
+    display: block;
+  }
+  .v-pc {
+    display: none;
+  }
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 44px);
+  background-color: #25aedb;
+}
+
+.banner .banner-deco-item {
+  position: absolute;
+}
+
+.banner .banner-deco-item img {
+  width: 100%;
+  height: auto;
+}
+
+.banner .banner-deco-item.deco1 {
+  bottom: 20%;
+  left: 15%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 5%;
+  height: auto;
+}
+
+.banner .banner-deco-item.deco2 {
+  right: 0;
+  top: 0;
+  width: 25vw;
+  height: calc(100vh - 44px);
+  background-image: url("../image/banner/banner-deco2.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner .banner-deco-item.deco3 {
+  top: 50%;
+  right: 15%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 10%;
+  height: auto;
+}
+
+.banner .banner-deco-item.deco4 {
+  bottom: 3%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.banner .banner-deco-item.deco4 img {
+  max-width: 55px;
+  display: block;
+  margin: auto;
+}
+
+.banner .banner-deco-item.deco4 p {
+  color: #ffffff;
+  font-family: 'ICIELINTERNACIONAL';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.banner .banner-content {
+  position: relative;
+  max-width: 1440px;
+  height: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner .banner-content .banner-logo {
+  margin-bottom: 30px;
+  max-width: 100%;
+}
+
+.banner .banner-content .banner-logo img {
+  width: 100%;
+  height: auto;
+}
+
+.banner .banner-content .banner-title {
+  margin-bottom: 30px;
+  max-width: 60%;
+  padding-left: 5%;
+}
+
+.banner .banner-content .banner-title img {
+  width: 100%;
+  height: auto;
+}
+
+.banner .banner-content .banner-des {
+  padding-left: 20%;
+}
+
+.banner .banner-content .banner-des h5 {
+  font-family: 'ICIELINTERNACIONAL';
+  font-style: normal;
+  font-weight: bold;
+  color: #000000;
+  font-size: 26px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.banner .banner-content .banner-des p {
+  font-family: 'ICIELINTERNACIONAL';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.3;
+  color: #000000;
+  max-width: 45%;
+  margin-bottom: 10px;
+}
+
+.zone1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.zone1 .zone1-deco-item {
+  position: absolute;
+}
+
+.zone1 .zone1-deco-item.deco1 {
+  left: 0;
+  top: 0;
+  width: 15vw;
+  height: 100vh;
+  background-image: url("../image/zone/zone1-deco1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.zone1 .zone1-content {
+  position: relative;
+  max-width: 1440px;
+  height: 100%;
+  margin: auto;
+}
+
+.zone1 .zone1-content .mini-logo {
+  position: absolute;
+  top: 5%;
+  right: 0;
+  width: 10%;
+  height: auto;
+}
+
+.zone1 .zone1-content .mini-logo img {
+  width: 100%;
+  height: auto;
+}
+
+.zone2 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../image/zone/zone2-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.zone2 .zone2-content {
+  position: relative;
+  max-width: 1440px;
+  height: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.zone2 .zone2-content .zone2-content-wrapper {
+  position: relative;
+  width: 100%;
+  height: 94%;
+  background-color: RGBA(37, 174, 219, 0.85);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.zone2 .zone2-content .zone2-content-wrapper .mini-logo {
+  position: absolute;
+  top: 3%;
+  right: 2%;
+  width: 10%;
+  height: auto;
+}
+
+.zone2 .zone2-content .zone2-content-wrapper .mini-logo img {
+  width: 100%;
+  height: auto;
+}
+
+.zone2 .zone2-content .zone2-content-wrapper .zone-title {
+  margin: 20px 0;
+  position: relative;
+}
+
+.zone2 .zone2-content .zone2-content-wrapper .zone-title h4 {
+  font-family: 'ICIELINTERNACIONAL';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1.2;
+  color: #000000;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+}
+
+.zone2 .zone2-content .zone2-content-wrapper .zone-title::before {
+  content: "";
+  position: absolute;
+  top: -25%;
+  left: 32%;
+  width: 15%;
+  height: 150%;
+  background-image: url("../image/zone/zone2-title-deco.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  z-index: 1;
+}
+
+.zone3 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../image/zone/zone3-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.zone3 .zone3-content {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  max-width: 1440px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.zone3 .zone3-content .mini-logo {
+  position: absolute;
+  top: 5%;
+  right: 0;
+  width: 10%;
+  height: auto;
+}
+
+.zone3 .zone3-content .mini-logo img {
+  width: 100%;
+  height: auto;
+}
+
+.zone3 .zone3-content .zone3-title {
+  position: absolute;
+  top: 10%;
+  left: 0;
+}
+
+.zone3 .zone3-content .zone3-title h4 {
+  color: #ffffff;
+  font-family: 'ICIELINTERNACIONAL';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.zone3 .zone-planet-wrapper {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.zone3 .zone-planet-wrapper .zone-p {
+  position: absolute;
+}
+
+.zone3 .zone-planet-wrapper .zone-p img {
+  width: 100%;
+  height: auto;
+}
+
+.zone3 .zone-planet-wrapper .zone-p.planet1 {
+  top: 20% !important;
+  left: 16% !important;
+  width: 65%;
+}
+
+.zone3 .zone-planet-wrapper .zone-p.planet2 {
+  top: 25% !important;
+  left: 15% !important;
+  width: 10%;
+}
+
+.zone3 .zone-planet-wrapper .zone-p.planet3 {
+  top: 55% !important;
+  left: 30% !important;
+  width: 10%;
+}
+
+.zone3 .zone-planet-wrapper .zone-p.planet4 {
+  top: 45% !important;
+  left: unset !important;
+  right: 20% !important;
+  width: 10%;
+}
+
+.zone4 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.zone4 .zone4-deco-item {
+  position: absolute;
+}
+
+.zone4 .zone4-deco-item.deco1 {
+  right: 0;
+  bottom: -25%;
+  max-width: 35vw;
+}
+
+.zone4 .zone4-deco-item.deco1 img {
+  width: 100%;
+  height: auto;
+}
+
+.zone4 .zone4-content {
+  position: relative;
+  max-width: 1440px;
+  height: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.zone4 .zone4-content .mini-logo {
+  position: absolute;
+  top: 5%;
+  right: 0;
+  width: 10%;
+  height: auto;
+}
+
+.zone4 .zone4-content .mini-logo img {
+  width: 100%;
+  height: auto;
+}
+
+.zone4 .zone4-content svg {
+  width: 100%;
+  display: block;
+}
+
+.zone5 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.zone5 .zone5-deco-item {
+  position: absolute;
+}
+
+.zone5 .zone5-deco-item.deco1 {
+  right: 0;
+  bottom: -25%;
+  max-width: 35vw;
+}
+
+.zone5 .zone5-deco-item.deco1 img {
+  width: 100%;
+  height: auto;
+}
+
+.zone5 .zone5-content {
+  position: relative;
+  max-width: 1440px;
+  height: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.zone5 .zone5-content .mini-logo {
+  position: absolute;
+  top: 5%;
+  right: 0;
+  width: 10%;
+  height: auto;
+}
+
+.zone5 .zone5-content .mini-logo img {
+  width: 100%;
+  height: auto;
+}
+
+.zone5 .zone5-content svg {
+  width: 100%;
+  display: block;
+}
+
+.zone6 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.zone6 .zone6-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1440px;
+  height: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.zone6 .zone6-content .mini-logo {
+  position: absolute;
+  top: 5%;
+  right: 0;
+  width: 10%;
+  height: auto;
+}
+
+.zone6 .zone6-content .mini-logo img {
+  width: 100%;
+  height: auto;
+}
+
+.zone6 .zone6-content .zone6-gr-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.zone6 .zone6-content .zone6-gr-wrapper .zone6-gr {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+  max-width: 48%;
+}
+
+.zone6 .zone6-content .zone6-gr-wrapper .zone6-gr h5 {
+  font-family: 'ICIELINTERNACIONAL';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1.1;
+  margin-bottom: 40px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.zone6 .zone6-content .zone6-gr-wrapper .zone6-gr ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 70px;
+}
+
+.zone6 .zone6-content .zone6-gr-wrapper .zone6-gr ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  max-width: 80%;
+}
+
+.zone6 .zone6-content .zone6-gr-wrapper .zone6-gr ul li span {
+  font-family: 'ICIELINTERNACIONAL';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 33px;
+  line-height: 1.1;
+  color: #25aedb;
+  display: block;
+}
+
+.zone6 .zone6-content .zone6-gr-wrapper .zone6-gr ul li p {
+  font-family: 'ICIELINTERNACIONAL';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #000000;
+  margin-left: 20px;
+}
+
+.zone6 .zone6-content .zone6-gr-wrapper .zone6-gr .btn-group {
+  max-width: 50%;
+  margin-left: auto;
+}
+
+.zone6 .zone6-content .zone6-gr-wrapper .zone6-gr .btn-group .btn-group__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 230px;
+  padding: 15px 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  border: 1px solid #25aedb;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.zone6 .zone6-content .zone6-gr-wrapper .zone6-gr .btn-group .btn-group__item img {
+  width: 20%;
+  height: auto;
+}
+
+.zone6 .zone6-content .zone6-gr-wrapper .zone6-gr .btn-group .btn-group__item p {
+  font-family: 'ICIELINTERNACIONAL';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 1.1;
+  color: #000000;
+  margin-left: 15px;
+}
+
+.zone6 .zone6-content .zone6-gr-wrapper .zone6-gr .btn-group .btn-group__item.animated {
+  background-color: #25aedb;
+}
+
+.zone6 .zone6-content .zone6-gr-wrapper .zone6-gr .zone6-result__item {
+  max-width: 100%;
+}
+
+.zone6 .zone6-content .zone6-gr-wrapper .zone6-gr .zone6-result__item img {
+  width: 100%;
+  height: auto;
+}
+
+.zone6 .zone6-content .zone6-gr-wrapper .zone6-gr .zone6-result__item.hidden {
+  display: none;
+}
+
+.zone6 .zone6-content .zone6-gr-wrapper .zone6-gr .zone6-result__item.active {
+  display: block;
+}
+
+.zone7 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #a3ebf1;
+  overflow: hidden;
+}
+
+.zone7 .zone7-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1440px;
+  height: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.zone7 .zone7-content .mini-logo {
+  position: absolute;
+  top: 5%;
+  right: 0;
+  width: 10%;
+  height: auto;
+}
+
+.zone7 .zone7-content .mini-logo img {
+  width: 100%;
+  height: auto;
+}
+
+.zone7 .zone7-content .zone7-grid {
+  position: relative;
+  width: 100%;
+}
+
+.zone7 .zone7-content .grid-title {
+  font-family: 'ICIELINTERNACIONAL';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.2;
+  color: #000000;
+  text-transform: uppercase;
+  max-width: 50%;
+  margin-bottom: 50px;
+}
+
+.zone7 .zone7-content .grid-layout {
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.zone7 .zone7-content .grid-layout-gr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.zone7 .zone7-content .grid-layout-gr .grid-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  max-width: 25%;
+  border: 1px solid #25aedb;
+  height: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.zone7 .zone7-content .grid-layout-gr .grid-item .item-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10%;
+  cursor: context-menu;
+}
+
+.zone7 .zone7-content .grid-layout-gr .grid-item .item-inner img {
+  max-width: 100%;
+  height: auto;
+}
+
+.zone7 .zone7-content .grid-layout-gr .grid-item .item-inner p {
+  font-family: 'ICIELINTERNACIONAL';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1;
+  margin-bottom: 0;
+  margin-left: 20px;
+  color: #25aedb;
+}
+
+.zone7 .zone7-content .grid-layout-gr .grid-item .item-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.zone7 .zone7-content .grid-layout-gr .grid-item .item-overlay img {
+  width: 100%;
+  height: 100%;
+}
+
+.zone7 .zone7-content .grid-layout-gr .grid-item .item-overlay .overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#020024), color-stop(35%, rgba(0, 0, 0, 0.896796)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, #020024 0%, rgba(0, 0, 0, 0.896796) 35%, rgba(0, 0, 0, 0) 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.zone7 .zone7-content .grid-layout-gr .grid-item .item-overlay .overlay-text p {
+  color: #ffffff;
+  padding: 15px;
+  font-family: 'ICIELINTERNACIONAL';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.zone7 .zone7-content .grid-layout-gr .grid-item:hover .item-overlay {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.zone7 .zone7-content .grid-layout-gr.layout-top .grid-item:first-child {
+  border-top-left-radius: 25px;
+}
+
+.zone7 .zone7-content .grid-layout-gr.layout-top .grid-item:last-child {
+  border-top-right-radius: 25px;
+}
+
+.zone7 .zone7-content .grid-layout-gr.layout-bot .grid-item:first-child {
+  border-bottom-left-radius: 25px;
+}
+
+.zone7 .zone7-content .grid-layout-gr.layout-bot .grid-item:last-child {
+  border-bottom-right-radius: 25px;
+}
+
+.zone8 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.zone8 .zone8-deco-item {
+  position: absolute;
+}
+
+.zone8 .zone8-deco-item.deco1 {
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.zone8 .zone8-deco-item.deco1 img {
+  width: 100%;
+  height: auto;
+}
+
+.zone8 .zone8-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1440px;
+  height: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.zone8 .zone8-content .mini-logo {
+  position: absolute;
+  top: 5%;
+  right: 0;
+  width: 10%;
+  height: auto;
+}
+
+.zone8 .zone8-content .mini-logo img {
+  width: 100%;
+  height: auto;
+}
+
+.zone8 .zone8-content svg {
+  width: 100%;
+  display: block;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #25aedb;
+  overflow: hidden;
+}
+
+.footer .footer-deco-item {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35vw;
+  height: 100%;
+  background-image: url("../image/zone/footer-deco.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+}
+
+.footer .footer-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1440px;
+  height: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer-content .mini-logo {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  width: 30%;
+}
+
+.footer .footer-content .mini-logo img {
+  width: 100%;
+  height: auto;
+}
+
+.footer .footer-content .footer-title {
+  color: #000000;
+  margin-bottom: 50px;
+  font-family: 'ICIELINTERNACIONAL';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 1;
+}
+
+.footer .footer-content .footer-job {
+  font-family: 'ICIELINTERNACIONAL';
+  font-style: normal;
+  font-weight: bold;
+  color: #000000;
+  font-size: 26px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.footer .footer-content .footer-name {
+  font-family: 'ICIELINTERNACIONAL';
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+  font-size: 20px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.footer .footer-content .footer-contact {
+  font-family: 'ICIELINTERNACIONAL';
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 20px;
+  color: #000000;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.footer .footer-content .footer-contact span {
+  font-weight: bold;
+  color: #fdff2d;
+}
+/*# sourceMappingURL=index.css.map */

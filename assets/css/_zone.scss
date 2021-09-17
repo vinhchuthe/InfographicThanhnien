@@ -1,0 +1,753 @@
+$main-blue: #25aedb;
+$light-blue: #a3ebf1;
+$black: #000000;
+$white: #ffffff;
+$pc-height: calc(100vh - 44px);
+
+.zone1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: $white;
+
+    .zone1-deco-item {
+        position: absolute;
+
+        &.deco1 {
+            left: 0;
+            top: 0;
+            width: 15vw;
+            height: 100vh;
+            background-image: url('../image/zone/zone1-deco1.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .zone1-content {
+        position: relative;
+        max-width: 1440px;
+        height: 100%;
+        margin: auto;
+
+        .mini-logo {
+            position: absolute;
+            top: 5%;
+            right: 0;
+            width: 10%;
+            height: auto;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+.zone2 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../image/zone/zone2-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+    .zone2-content {
+        position: relative;
+        max-width: 1440px;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+
+        .zone2-content-wrapper {
+            position: relative;
+            width: 100%;
+            height: 94%;
+            background-color: RGBA(37, 174, 219, 0.85);
+            border-radius: 20px;
+            padding: 40px;
+
+            .mini-logo {
+                position: absolute;
+                top: 3%;
+                right: 2%;
+                width: 10%;
+                height: auto;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .zone-title {
+                margin: 20px 0;
+                position: relative;
+
+                h4 {
+                    font-family: 'ICIELINTERNACIONAL';
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 40px;
+                    line-height: 1.2;
+                    color: $black;
+                    text-transform: uppercase;
+                    position: relative;
+                    display: inline-block;
+                    z-index: 2;
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: -25%;
+                    left: 32%;
+                    width: 15%;
+                    height: 150%;
+                    background-image: url('../image/zone/zone2-title-deco.png');
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                    background-position: center;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+}
+
+.zone3 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../image/zone/zone3-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+    .zone3-content {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 1440px;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+
+        .mini-logo {
+            position: absolute;
+            top: 5%;
+            right: 0;
+            width: 10%;
+            height: auto;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .zone3-title {
+            position: absolute;
+            top: 10%;
+            left: 0;
+
+            h4 {
+                color: $white;
+                font-family: 'ICIELINTERNACIONAL';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 1.2;
+            }
+        }
+    }
+
+    .zone-planet-wrapper {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+
+        .zone-p {
+            position: absolute;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            &.planet1 {
+                top: 20% !important;
+                left: 16% !important;
+                width: 65%;
+            }
+
+            &.planet2 {
+                top: 25% !important;
+                left: 15% !important;
+                width: 10%;
+            }
+
+            &.planet3 {
+                top: 55% !important;
+                left: 30% !important;
+                width: 10%;
+            }
+
+            &.planet4 {
+                top: 45% !important;
+                left: unset !important;
+                right: 20% !important;
+                width: 10%;
+            }
+        }
+    }
+}
+
+.zone4 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: $white;
+    overflow: hidden;
+
+    .zone4-deco-item {
+        position: absolute;
+
+        &.deco1 {
+            right: 0;
+            bottom: -25%;
+            max-width: 35vw;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .zone4-content {
+        position: relative;
+        max-width: 1440px;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+
+        .mini-logo {
+            position: absolute;
+            top: 5%;
+            right: 0;
+            width: 10%;
+            height: auto;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        svg {
+            width: 100%;
+            display: block;
+        }
+    }
+}
+
+.zone5 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: $white;
+    overflow: hidden;
+
+    .zone5-deco-item {
+        position: absolute;
+
+        &.deco1 {
+            right: 0;
+            bottom: -25%;
+            max-width: 35vw;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .zone5-content {
+        position: relative;
+        max-width: 1440px;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+
+        .mini-logo {
+            position: absolute;
+            top: 5%;
+            right: 0;
+            width: 10%;
+            height: auto;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        svg {
+            width: 100%;
+            display: block;
+        }
+    }
+}
+
+.zone6 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: $white;
+    overflow: hidden;
+
+    .zone6-content {
+        position: relative;
+        z-index: 2;
+        max-width: 1440px;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+
+        .mini-logo {
+            position: absolute;
+            top: 5%;
+            right: 0;
+            width: 10%;
+            height: auto;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .zone6-gr-wrapper {
+            position: relative;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            .zone6-gr {
+                flex: 0 0 48%;
+                max-width: 48%;
+
+                h5 {
+                    font-family: 'ICIELINTERNACIONAL';
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 40px;
+                    line-height: 1.1;
+                    margin-bottom: 40px;
+                    color: $black;
+                    text-transform: uppercase;
+                }
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin-bottom: 70px;
+
+                    li {
+                        display: flex;
+                        margin-bottom: 20px;
+                        max-width: 80%;
+
+                        span {
+                            font-family: 'ICIELINTERNACIONAL';
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 33px;
+                            line-height: 1.1;
+                            color: $main-blue;
+                            display: block;
+                        }
+
+                        p {
+                            font-family: 'ICIELINTERNACIONAL';
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 20px;
+                            line-height: 1.2;
+                            color: $black;
+                            margin-left: 20px;
+                        }
+                    }
+                }
+
+                .btn-group {
+                    max-width: 50%;
+                    margin-left: auto;
+
+                    .btn-group__item {
+                        display: flex;
+                        align-items: center;
+                        width: 230px;
+                        padding: 15px 25px;
+                        justify-content: center;
+                        background-color: $white;
+                        border-radius: 20px;
+                        margin-bottom: 25px;
+                        border: 1px solid $main-blue;
+                        transition: all 0.4s;
+                        cursor: pointer;
+
+                        img {
+                            width: 20%;
+                            height: auto;
+                        }
+
+                        p {
+                            font-family: 'ICIELINTERNACIONAL';
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 25px;
+                            line-height: 1.1;
+                            color: $black;
+                            margin-left: 15px;
+                        }
+
+                        &.animated {
+                            background-color: $main-blue;
+                        }
+                    }
+                }
+
+                .zone6-result__item {
+                    max-width: 100%;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    &.hidden {
+                        display: none;
+                    }
+
+                    &.active {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.zone7 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: $light-blue;
+    overflow: hidden;
+
+    .zone7-content {
+        position: relative;
+        z-index: 2;
+        max-width: 1440px;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+
+        .mini-logo {
+            position: absolute;
+            top: 5%;
+            right: 0;
+            width: 10%;
+            height: auto;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .zone7-grid {
+            position: relative;
+            width: 100%;
+        }
+
+        .grid-title {
+            font-family: 'ICIELINTERNACIONAL';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 42px;
+            line-height: 1.2;
+            color: $black;
+            text-transform: uppercase;
+            max-width: 50%;
+            margin-bottom: 50px;
+        }
+
+        .grid-layout {
+            border-radius: 25px;
+            overflow: hidden;
+        }
+
+        .grid-layout-gr {
+            display: flex;
+            width: 100%;
+            overflow: hidden;
+
+            .grid-item {
+                flex: 0 0 25%;
+                max-width: 25%;
+                border: 1px solid $main-blue;
+                height: 25vh;
+                display: flex;
+                align-items: center;
+                position: relative;
+                overflow: hidden;
+
+                .item-inner {
+                    display: flex;
+                    align-items: center;
+                    padding-left: 10%;
+                    cursor: context-menu;
+
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                    }
+
+                    p {
+                        font-family: 'ICIELINTERNACIONAL';
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 20px;
+                        line-height: 1;
+                        margin-bottom: 0;
+                        margin-left: 20px;
+                        color: $main-blue;
+                    }
+                }
+
+                .item-overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    transform: translateX(100%);
+                    transition: all 0.4s;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .overlay-text {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 0.896796218487395) 35%, rgba(0, 0, 0, 0) 100%);
+                        display: flex;
+                        align-items: flex-end;
+
+                        p {
+                            color: $white;
+                            padding: 15px;
+                            font-family: 'ICIELINTERNACIONAL';
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 1.4;
+                        }
+                    }
+                }
+
+                &:hover {
+                    .item-overlay {
+                        transform: translateX(0);
+                        transition: all 0.4s;
+                    }
+                }
+            }
+
+            &.layout-top {
+                .grid-item {
+                    &:first-child {
+                        border-top-left-radius: 25px;
+                    }
+
+                    &:last-child {
+                        border-top-right-radius: 25px;
+                    }
+                }
+            }
+
+            &.layout-bot {
+                .grid-item {
+                    &:first-child {
+                        border-bottom-left-radius: 25px;
+                    }
+
+                    &:last-child {
+                        border-bottom-right-radius: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.zone8 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: $white;
+    overflow: hidden;
+
+    .zone8-deco-item {
+        position: absolute;
+
+        &.deco1 {
+            left: 50%;
+            top: 50%;
+            width: 100%;
+            transform: translate(-50%, -50%);
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .zone8-content {
+        position: relative;
+        z-index: 2;
+        max-width: 1440px;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+
+        .mini-logo {
+            position: absolute;
+            top: 5%;
+            right: 0;
+            width: 10%;
+            height: auto;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        svg {
+            width: 100%;
+            display: block;
+        }
+    }
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: $main-blue;
+    overflow: hidden;
+
+    .footer-deco-item {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 35vw;
+        height: 100%;
+        background-image: url('../image/zone/footer-deco.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top left;
+    }
+
+    .footer-content {
+        position: relative;
+        z-index: 2;
+        max-width: 1440px;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+
+        .mini-logo {
+            position: absolute;
+            top: 15%;
+            left: 0;
+            width: 30%;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .footer-title {
+            color: $black;
+            margin-bottom: 50px;
+            font-family: 'ICIELINTERNACIONAL';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 50px;
+            line-height: 1;
+        }
+
+        .footer-job {
+            font-family: 'ICIELINTERNACIONAL';
+            font-style: normal;
+            font-weight: bold;
+            color: $black;
+            font-size: 26px;
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+
+        .footer-name {
+            font-family: 'ICIELINTERNACIONAL';
+            font-style: normal;
+            font-weight: normal;
+            color: $black;
+            font-size: 20px;
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+
+        .footer-contact {
+            font-family: 'ICIELINTERNACIONAL';
+            font-style: normal;
+            font-weight: normal;
+            margin-bottom: 20px;
+            color: $black;
+            font-size: 20px;
+            line-height: 1;
+
+            span {
+                font-weight: bold;
+                color: #fdff2d;
+            }
+        }
+    }
+}
