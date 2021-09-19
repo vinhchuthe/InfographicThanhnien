@@ -60,7 +60,7 @@ $(document).ready(function () {
             offset: 50,
         })
         .setTween(tl4)
-        .addIndicators()
+        // .addIndicators()
         .addTo(controller);
 
     // zone5
@@ -115,7 +115,7 @@ $(document).ready(function () {
             offset: 50,
         })
         .setTween(tl5)
-        .addIndicators()
+        // .addIndicators()
         .addTo(controller);
 
     // zone6
