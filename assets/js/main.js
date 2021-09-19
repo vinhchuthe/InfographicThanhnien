@@ -126,4 +126,19 @@ $(document).ready(function () {
         $(this).addClass('animated');
         $('#' + data).addClass('active');
     });
+
+    // zone8
+    new ScrollMagic.Scene({
+            triggerElement: '.zone8',
+            // offset: 50,
+        })
+        .setTween(TweenMax.from($('#zone8-title'), 0.7, {
+            opacity: 0,
+            autoAlpha: 0,
+            x: '-=50px',
+            ease: Power2.easeNone
+        }))
+        // .addIndicators()
+        .addTo(controller);
+
 });

@@ -22,6 +22,10 @@ $pc-height: calc(100vh - 44px);
             transform: translateY(-50%);
             width: 5%;
             height: auto;
+
+            @media (max-width: 1680px) and (max-height: 1050px) {
+                left: 10%;
+            }
         }
 
         &.deco2 {
@@ -52,6 +56,10 @@ $pc-height: calc(100vh - 44px);
                 max-width: 55px;
                 display: block;
                 margin: auto;
+
+                @media (max-width: 1366px) {
+                    max-width: 45px;
+                }
             }
 
             p {
@@ -61,6 +69,10 @@ $pc-height: calc(100vh - 44px);
                 font-weight: normal;
                 font-size: 14px;
                 margin: 5px 0;
+
+                @media (max-width: 1366px) {
+                    font-size: 12px;
+                }
             }
         }
     }
@@ -81,6 +93,14 @@ $pc-height: calc(100vh - 44px);
                 width: 100%;
                 height: auto;
             }
+
+            @media (max-width: 1600px) {
+                max-width: 80%;
+            }
+
+            @media (max-width: 1366px) {
+                max-width: 70%;
+            }
         }
 
         .banner-title {
@@ -91,6 +111,14 @@ $pc-height: calc(100vh - 44px);
             img {
                 width: 100%;
                 height: auto;
+            }
+
+            @media (max-width: 1600px) {
+                max-width: 50%;
+            }
+
+            @media (max-width: 1366px) {
+                max-width: 40%;
             }
         }
 
@@ -105,6 +133,14 @@ $pc-height: calc(100vh - 44px);
                 font-size: 26px;
                 line-height: 1;
                 margin-bottom: 10px;
+
+                @media (max-width: 1600px) {
+                    font-size: 24px;
+                }
+
+                @media (max-width: 1366px) {
+                    font-size: 22px;
+                }
             }
 
             p {
@@ -116,7 +152,27 @@ $pc-height: calc(100vh - 44px);
                 color: $black;
                 max-width: 45%;
                 margin-bottom: 10px;
+
+                @media (max-width: 1600px) {
+                    font-size: 18px;
+                }
+
+                @media (max-width: 1366px) {
+                    font-size: 16px;
+                }
             }
+
+            @media (max-width: 1600px) {
+                padding-left: 15%;
+            }
+        }
+
+        @media (max-width: 1600px) {
+            max-width: 1200px;
+        }
+
+        @media (max-width: 1366px) {
+            max-width: 1140px;
         }
     }
 }
