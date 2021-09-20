@@ -78,32 +78,95 @@ $pc-height: calc(100vh - 44px);
                             max-width: 50%;
                             padding: 10px;
                             cursor: pointer;
+                            position: relative;
 
                             img {
                                 width: 100%;
                                 height: auto;
                             }
+
+                            .zone1-list-bg {
+                                position: relative;
+
+                                img {
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+
+                            .zone1-list-icon {
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                width: 80%;
+                                transform: translate(-50%, -50%);
+                                text-align: center;
+
+
+                                img {
+                                    width: 100%;
+                                    height: auto;
+                                    max-width: 40%;
+                                }
+
+                                p {
+                                    font-family: 'ICIELINTERNACIONAL';
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 16px;
+                                    line-height: 1.3;
+                                    color: #0084ff;
+                                    text-align: center;
+                                    margin: 10px 0;
+                                    text-transform: uppercase;
+
+                                    @media (max-width: 1600px) {
+                                        font-size: 16px;
+                                    }
+
+                                    @media (max-width: 1366px) {
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
                         }
                     }
 
                     .zone1-list-overlay {
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        background-color: $main-blue;
-                        border-radius: 20px;
-                        display: none;
 
                         .list-overlay-item {
+                            position: absolute;
+                            width: 90%;
+                            height: 90%;
                             display: none;
                             opacity: 0;
+                            border-radius: 20px;
+                            background-color: $main-blue;
                             transition: all 0.4s;
 
                             img {
                                 width: 100%;
                                 height: auto;
+                            }
+
+                            &.overlay-item1 {
+                                top: 0;
+                                left: -90%;
+                            }
+
+                            &.overlay-item3 {
+                                top: 0;
+                                left: -90%;
+                            }
+
+                            &.overlay-item2 {
+                                top: 0;
+                                left: -40%;
+                            }
+
+                            &.overlay-item4 {
+                                top: 0;
+                                left: -40%;
                             }
 
                             &.active {

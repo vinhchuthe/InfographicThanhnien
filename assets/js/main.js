@@ -18,11 +18,10 @@ $(document).ready(function () {
         }, 100);
 
     })
-    $('.zone1-list-overlay').mouseleave(function () {
-        $(this).removeClass('clicked');
+    $('.zone1-list-item').mouseleave(function () {
         $('.list-overlay-item').removeClass('active');
         $('.list-overlay-item').removeClass('reveal');
-    })
+    });
 
     // zone2
     $('#zone2-btn').click(function () {
